@@ -1,0 +1,51 @@
+#navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F9FAFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  padding-left: 20px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-map-marker-alt,
+.fa-phone-alt,
+.fa-envelope {
+  font-size: 20px;
+  padding-right: 10px;
+  color: $light-gray;
+}
+
+
+.contact-item {
+  text-align: center;
+}
+
+.item-content {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+
+.contact-link {
+  font-size: 14px;
+  color: $light-gray;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}

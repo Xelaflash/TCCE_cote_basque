@@ -2,6 +2,7 @@
 @import "config/fonts";
 @import "config/colors";
 @import "config/reset";
+@import "config/utilities";
 
 // Your CSS partials
 @import "components/index";
@@ -10,5 +11,15 @@
 
 
 body {
-  background: linear-gradient(to right, #3de6fa, #243eff);
+  // background: linear-gradient(to right, #3de6fa, #243eff);
+  background: $white;
+  font-family: $body-font;
+}
+
+.title {
+  font-family: $headers-font;
+  color: $gray;
+  font-size: 32px;
+  margin-bottom: 20px;
+  line-height: 39px;
 }
