@@ -17,3 +17,11 @@
 .legal a:hover {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  .footer-flex {
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+  }
+}
