@@ -1,14 +1,16 @@
-.main {
-  height: 80vh;
+#home-page {
   position: relative;
+  min-height: 650px;
 }
 
-.main-banner {
+.banner {
   background-image: url('/assets/images/banner.png');
   background-size: cover;
   background-position: center;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  position: absolute;
 }
 
 .home-container {
@@ -154,7 +156,7 @@
 }
 
 @media (max-width: 991px) {
-  .main-banner {
+  .banner {
     background: linear-gradient(rgba(0, 114, 255, 0.8), rgba(0, 198, 255, 0.8)), url('/assets/images/banner.png');
     background-position: center;
     background-size: cover;
@@ -163,7 +165,8 @@
   }
 
   .home-container {
-    left: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 
   .title,
@@ -191,6 +194,38 @@
 
 @media (max-width: 768px) {
   .card-container {
-    margin-top: -100px;
+    margin-top: -70px;
   }
+}
+
+@media (max-device-width: 812px) {
+  .home-container {
+    top: 5%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .card-container {
+    margin-top: -65px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+  #home-page {
+    min-height: 500px;
+  }
+
+}
+
+
+// ipad
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .home-container {
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
 }

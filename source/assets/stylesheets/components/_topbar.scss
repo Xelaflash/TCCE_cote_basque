@@ -16,6 +16,16 @@
   text-align: center;
 }
 
+.site-description {
+  width: auto;
+}
+
 .opening-hrs {
   font-weight: bold;
+}
+
+@media (max-device-width: 668px) {
+  .topbar-flex {
+    padding: 0;
+  }
 }
