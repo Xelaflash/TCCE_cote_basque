@@ -1,22 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title><%= current_page.data.title %></title>
+    <meta name="description" content="<%= data.meta.meta_description %>" />
+    <meta name="theme-color" content="#2F88FD" />
+    <!-- Facebook Open Graph data -->
+    <meta property="og:title" content="<%= data.meta.meta_title %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.tcc-cotebasque.fr" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dmnykpglo/image/upload/v1581612530/logo.png"
+    />
+    <meta
+      property="og:description"
+      content="<%= data.meta.meta_description %>"
+    />
+    <meta
+      property="og:site_name"
+      content="<%= data.meta.meta_product_name %>"
+    />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="<%= data.meta.meta_title %>" />
+    <meta
+      name="twitter:description"
+      content="<%= data.meta.meta_description %>"
+    />
+    <meta
+      name="twitter:image:src"
+      content="https://res.cloudinary.com/dmnykpglo/image/upload/v1581612530/logo.png"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="apple-touch-icon-180x180-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="apple-touch-icon-152x152-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="apple-touch-icon-144x144-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="apple-touch-icon-114x114-precomposed.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="apple-touch-icon-72x72-precomposed.png"
+    />
+    <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <%= stylesheet_link_tag "application" %>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title><%= current_page.data.title %></title>
-  <%= stylesheet_link_tag "application" %>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-</head>
-
-<body>
-  <%= partial "layouts/shared/topbar" %>
-  <%= partial "layouts/shared/navbar" %>
-  <%= yield %>
-  <%= partial "layouts/shared/footer" %>
-  <%= javascript_include_tag "bundle" %>
-</body>
-
+  <body>
+    <%= partial "layouts/shared/topbar" %> <%= partial "layouts/shared/navbar"
+    %> <%= yield %> <%= partial "layouts/shared/footer" %> <%=
+    javascript_include_tag "bundle" %>
+  </body>
 </html>

@@ -219,7 +219,6 @@
 
 }
 
-
 // ipad
 @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .home-container {
@@ -227,5 +226,4 @@
     left: 50%;
     transform: translate(-50%, 0%);
   }
-
 }
