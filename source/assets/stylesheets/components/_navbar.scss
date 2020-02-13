@@ -1,12 +1,11 @@
 #navbar {
-  // position: absolute;
-  // top: 51px;
   width: 100%;
   z-index: 100;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   background: #F9FAFF;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -17,15 +16,10 @@
   padding-left: 20px;
 }
 
-.nav-right {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .fa-map-marker-alt,
 .fa-phone-alt,
 .fa-envelope {
+  width: 30px;
   font-size: 20px;
   padding-right: 10px;
   color: $gray;
@@ -39,8 +33,7 @@
 .item-content {
   display: flex;
   align-items: flex-end;
-  justify-content: space-evenly;
-  padding: 0 20px;
+  padding: 5px 10px;
 }
 
 .contact-link {
@@ -52,4 +45,27 @@
 
 .contact-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 1199px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .nav-left {
+    margin: 10px auto;
+  }
+
+  .nav-right {
+    margin: 10px auto 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 20px;
+  }
 }
