@@ -1,6 +1,8 @@
 <nav id="navbar">
   <div class="nav-left">
-    <%= image_tag "/assets/images/logo.png", class: "logo", alt: "TCC Cote Basque - logo" %>
+    <% link_to "/" do %>
+      <%= image_tag "/assets/images/logo.png", class: "logo", alt: "TCC Cote Basque - logo" %>
+    <% end %>
   </div>
   <div class="nav-right">
     <div class="contact-item phone">

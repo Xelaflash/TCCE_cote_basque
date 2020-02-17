@@ -11,8 +11,8 @@
 }
 
 .logo {
-  height: 40px;
-  width: auto;
+  height: auto;
+  max-width: 450px;
   padding-left: 20px;
 }
 
@@ -73,5 +73,6 @@
 @media (max-device-width: 812px) {
   .logo {
     padding-left: 0;
+    max-width: 320px;
   }
 }
