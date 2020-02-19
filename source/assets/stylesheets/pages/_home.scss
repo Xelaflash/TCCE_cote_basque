@@ -4,7 +4,7 @@
 }
 
 .banner {
-  background-image: url('/assets/images/banner_doctor.png');
+  background-image: url("/assets/images/banner_doctor.jpg");
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -109,7 +109,6 @@
   color: $blue;
 }
 
-
 // .card:before {
 //   content: "";
 //   position: absolute;
@@ -167,15 +166,13 @@
   p,
   i,
   li {
-    color: $white
+    color: $white;
   }
 }
 
 .card:hover:before {
   transform: scaleY(1);
 }
-
-
 
 #troubles-list {
   list-style: disc;
@@ -196,11 +193,12 @@
 
 @media (max-width: 991px) {
   .banner {
-    background: linear-gradient(rgba(0, 114, 255, 0.8), rgba(0, 198, 255, 0.8)), url('/assets/images/banner.png');
+    background: linear-gradient(rgba(0, 114, 255, 0.8), rgba(0, 198, 255, 0.8)),
+      url("/assets/images/banner.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: .77;
+    opacity: 0.77;
   }
 
   .home-container {
@@ -255,7 +253,6 @@
   #home-page {
     min-height: 500px;
   }
-
 }
 
 // ipad
