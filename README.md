@@ -1,26 +1,16 @@
-<h1 align="center">Welcome to TCCE Côte Basque 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="#" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-</p>
+<h1 align="center">TCCE Côte Basque</h1>
 
 > Single page website done using *Middleman (ruby)* for therapy center in the *pays basque*, France 🇫🇷
 
-### 🏠 [Homepage](https://www.tcc-cotebasque.fr/)
+### 🏠 [Website](https://www.tcc-cotebasque.fr/)
 
-## Install
+## Stack
+ - Middleman (Ruby static site generator)
+ - Ruby
+ - Cloudinary (Assets hosting)
+ - Netlify (deploy & hosting)
+ - Webpack (module bundler)
 
-```sh
-yarn install
-```
-
-## Usage
-
-```sh
-yarn run start
-```
 
 ## Author
 
@@ -28,9 +18,3 @@ yarn run start
 
 * Website: https://www.alexgwebdev.com/
 
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
